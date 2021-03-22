@@ -20,10 +20,11 @@ export default function Sidebar() {
                     </nav>
                     
                 </div>
-                <div className="col s12 m3 sidenavnav hide-on-med-and-down   green " style={{padding:"0px !important"}}>
-                    <div className="center" style={{ marginTop: "50px", marginBottom: "50px" }}>
+                <div className="col s12 m3 sidenavnav hide-on-med-and-down green " style={{width:"210px !important",padding:"0px !important"}}>
+                    <div className="center" style={{ marginTop: "10px",marginBottom:"-65px" }}>
                         <Link to="/">
-                            <img src="assets/1.PNG" className="" alt="" />
+                            {/* <img src="assets/1.PNG" className="" alt="" /> */}
+                            <div className="sidebarTop col s12"></div>
                         </Link>
                     </div>
                     <div className="collection " style={{padding:"0px !important"}}>
@@ -34,7 +35,9 @@ export default function Sidebar() {
                         <Link to="/" className="black-text collection-item-nav">Create Template</Link>
                         <Link to="/Stats" className="black-text collection-item-nav">Statistics</Link>
                     </div>
-                   
+                    <div className="col s12 sidebarBottom">
+                        
+                    </div>
                 </div>
                 <div className="col s12 m9">
 
