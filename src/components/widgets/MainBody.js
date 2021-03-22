@@ -1,19 +1,16 @@
 import React from 'react'
 
-export default function MainBody() {
+export default function MainBody(props) {
+    const body = props.mainBody
+
     return (
        
         <div className="main row">
-            <div className="col s12 m2 "></div>
-            <div className="col s12 m10 ">
+            <div className="col s12 m3 "></div>
+            <div className="col s12 m9 ">
                 <div className="container " >
-                    <div className="row " style={{
-                        padding: "0px !important"
-                    }}>
-         
-                        
-                    </div>
-                    
+                    sss
+                    {body}                    
                 </div>
             </div>
 

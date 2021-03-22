@@ -1,12 +1,12 @@
 import React from 'react'
 import Sidebar from './widgets/Sidebar'
-import HomeBody from './pages/Home'
-    
-export default function Home() {
+import StatisticsBody from './pages/Statistics'
+
+export default function Statistics() {
     return (
         <div>
             <Sidebar />
-            <HomeBody />
+            <StatisticsBody />
         </div>
     )
 }

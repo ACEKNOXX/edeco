@@ -1,25 +1,31 @@
 import React from 'react'
 
-export default function StatCard() {
+export default function StatCard(props) {
+     const datas = props.datas
     return (
         <div className="green white-text mt-25" style={{
-            borderRadius:"10px",maxHeight:"165px",
+            borderRadius:"10px",minHeight:"125px",
             padding: "8px 16px"}}>
             <div>
                 <span style={{
                     
-                    fontSize:"25px",
+                    fontSize:"18px",
                     lineHeight:"15px"
                 }}>
-                    <b>Total Sales</b>
+                    {datas.title}
                 </span>
                 <br/>
-                <span style={{fontWeight:"bold",fontSize:"45px"}}>2300</span>
+                <span style={{ fontWeight: "bold", fontSize: "35px" }}>
+                    {datas.value}
+                </span>
             </div>
-            <button type="button" className="btn-flat center transparent white-text"
-                style={{border:"1px solid #eee",borderRadius:"12px"}}>
-                View Stat
-            </button>
+            {datas.url &&
+                <button type="button" className="btn-flat center transparent white-text"
+                    style={{border:"1px solid #eee",borderRadius:"12px"}}>
+                    View Stat
+                </button>
+            }
+            
         </div>
     )
 }

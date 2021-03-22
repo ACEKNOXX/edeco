@@ -13,7 +13,7 @@
 .sidenavnav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
   display: block;
 }
 
@@ -28,6 +28,7 @@
 }
 .container{
     width:92%  !important;
+    margin:0px auto im !important;
 }
 .green{
     /* background-image: linear-gradient(#58b04c,#78BC3B )  !important; */
@@ -38,12 +39,19 @@
     width:100% !important;
     margin:0px !important;
 }
-.collection-item{
+.collection-item-nav{
     border:none !important;
-    padding:30px 20px 30px 20px  !important;
+    padding:20px 20px 20px 20px  !important;
     margin-top:5px !important;
+    background:#eee;
+    width:300px;
+    opacity:0.8;
 }
+.collection-item-nav:hover{
+   background:#fff !important;
+    opacity:1;
 
+}
 .p-16{padding:16px;}
 .m-16{margin:16px;}
 .pl-25{padding-left:25px;}
@@ -66,3 +74,5 @@
 .mb-50{margin-bottom:50px;}
 .mb-100{margin-bottom:100px;}
 .mb-120{margin-bottom:120px;}
+
+
